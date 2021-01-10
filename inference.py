@@ -268,6 +268,13 @@ def main():
         img_batch = torch.FloatTensor(np.transpose(img_batch, (0, 3, 1, 2))).to(device)
         mel_batch = torch.FloatTensor(np.transpose(mel_batch, (0, 3, 1, 2))).to(device)
 
+        print(img_batch, mel_batch)
+        print(img_batch, mel_batch)
+        print(img_batch, mel_batch)
+        print(img_batch, mel_batch)
+        print(img_batch, mel_batch)
+        print(img_batch, mel_batch)
+
         with torch.no_grad():
             pred = model(mel_batch, img_batch)
 
